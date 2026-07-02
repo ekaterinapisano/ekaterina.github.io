@@ -1,38 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ekaterina Pisano | Web Designer</title>
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ekaterina Pisano | Web Design Portfolio</title>
+  <meta name="description" content="Web design portfolio of Ekaterina Pisano: WordPress, Elementor, UX, SEO-focused websites for small businesses." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+  <header class="site-header">
+    <a class="logo" href="#top">EP</a>
+    <nav>
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-<header>
-    <h1>Ekaterina Pisano</h1>
-    <p>Web Designer • WordPress • Elementor • UX</p>
-</header>
+  <main id="top">
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Web Design Portfolio</p>
+        <h1>Modern websites for small and mid-size businesses that need to look professional and convert.</h1>
+        <p class="hero-text">I design clean, strategic, SEO-friendly websites for local businesses, service brands, e-commerce stores, and professional practices.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#work">View Portfolio</a>
+          <a class="btn secondary" href="#contact">Contact Me</a>
+        </div>
+      </div>
+    </section>
 
-<section class="portfolio">
+    <section class="section intro" id="about">
+      <p class="eyebrow">About</p>
+      <h2>Web Designer • WordPress • Elementor • UX • SEO Structure</h2>
+      <p>I create websites with a focus on visual quality, mobile experience, clear messaging, and search-friendly page structure. My work spans home services, medical, dental, luxury, call centers, e-commerce, education, and local business websites.</p>
+    </section>
 
-    <div class="card">
-        <img src="images/cat-care-web-design.png" alt="">
-        <h2>Cat Care Website</h2>
-    </div>
+    <section class="section" id="work">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Selected Work</p>
+          <h2>Portfolio Projects</h2>
+        </div>
+        <p>Click any screenshot to enlarge.</p>
+      </div>
 
-    <div class="card">
-        <img src="images/HR-agency-web-design.png" alt="">
-        <h2>HR Agency</h2>
-    </div>
+      <div class="filters" aria-label="Portfolio filters">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="local">Local Business</button>
+        <button class="filter" data-filter="medical">Medical & Dental</button>
+        <button class="filter" data-filter="home">Home Services</button>
+        <button class="filter" data-filter="commerce">E-commerce</button>
+      </div>
 
-    <div class="card">
-        <img src="images/home-services-web-design.png" alt="">
-        <h2>Home Services</h2>
-    </div>
+      <div class="grid">
+        <article class="card" data-category="local">
+          <img src="images/42d0434ada686d10e999d71bfc1f40e9.jpg" alt="Cat care website design screenshot" />
+          <div class="card-body"><span>Luxury</span><h3>Luxury Watches Website</h3><p>Luxury minimal website design with clear navigation and bold visual style.</p></div>
+        </article>
+        <article class="card" data-category="local">
+          <img src="images/Cat-care-web-design.png" alt="Cat care website design screenshot" />
+          <div class="card-body"><span>Pet / Education</span><h3>Cat Care Website</h3><p>Content-rich website design with clear navigation and friendly visual style.</p></div>
+        </article>
+        <article class="card" data-category="local">
+          <img src="images/HR-agency-web-design.png" alt="HR agency website design screenshot" />
+          <div class="card-body"><span>Professional Services</span><h3>HR Agency Website</h3><p>Clean business layout for trust, services, and lead generation.</p></div>
+        </article>
+        <article class="card" data-category="home">
+          <img src="images/Home-services-web-design.png" alt="Home services website design screenshot" />
+          <div class="card-body"><span>Home Services</span><h3>Home Services Website</h3><p>Conversion-focused service website with strong calls to action.</p></div>
+        </article>
+        <article class="card" data-category="local">
+          <img src="images/auto-repair-web-design.png" alt="Auto repair website design screenshot" />
+          <div class="card-body"><span>Automotive</span><h3>Auto Repair Website</h3><p>Local service design built around credibility, services, and fast contact.</p></div>
+        </article>
+        <article class="card" data-category="local">
+          <img src="images/5e0c801cd5d39f0668c7f825354f5c54.jpg" alt="Call center website design screenshot" />
+          <div class="card-body"><span>B2B Services</span><h3>Call Center Website</h3><p>Business website with industry sections, service clarity, and lead generation.</p></div>
+        </article>
+        <article class="card" data-category="local">
+          <img src="images/cat-book-website-portfolio.png" alt="Cat book website design screenshot" />
+          <div class="card-body"><span>Author / Book</span><h3>Cat Book Website</h3><p>Personal brand and book presentation with warm, editorial design.</p></div>
+        </article>
+        <article class="card" data-category="home">
+          <img src="images/cleaning company website.jpg" alt="Cleaning company website design screenshot" />
+          <div class="card-body"><span>Cleaning Services</span><h3>Cleaning Company Website</h3><p>Local service website focused on trust, booking, and service details.</p></div>
+        </article>
+        <article class="card" data-category="medical">
+          <img src="images/dental-implant-institute-web-design.jpg" alt="Dental implant institute website design screenshot" />
+          <div class="card-body"><span>Dental</span><h3>Dental Implant Institute</h3><p>Professional medical design with high-trust visuals and patient-focused structure.</p></div>
+        </article>
+        <article class="card" data-category="medical">
+          <img src="images/dental-office-web-design.png" alt="Dental office website design screenshot" />
+          <div class="card-body"><span>Dental</span><h3>Dental Office Website</h3><p>Modern practice website with treatment pages and conversion-focused layout.</p></div>
+        </article>
+        <article class="card" data-category="commerce">
+          <img src="images/e-commerce-store-web-design.png" alt="E-commerce website design screenshot" />
+          <div class="card-body"><span>E-commerce</span><h3>E-commerce Store</h3><p>Product-focused design for online shopping and brand presentation.</p></div>
+        </article>
+        <article class="card" data-category="home">
+          <img src="images/flooring-website-portfolio.png" alt="Flooring website design screenshot" />
+          <div class="card-body"><span>Flooring</span><h3>Flooring Website</h3><p>Service and product category design for a local flooring business.</p></div>
+        </article>
+        <article class="card" data-category="home">
+          <img src="images/78d5c0358a60c3a0f357a8a4d0bcdff4.jpg" alt="Home security website design screenshot" />
+          <div class="card-body"><span>Security</span><h3>Home Security Website</h3><p>Modern technical service website for smart home and security solutions.</p></div>
+        </article>
+      </div>
+    </section>
 
-</section>
+    <section class="section contact" id="contact">
+      <p class="eyebrow">Contact</p>
+      <h2>Interested in working together?</h2>
+      <p>Email: <a href="mailto:katya@lav1.com">katya@lav1.com</a></p>
+    </section>
+  </main>
 
+  <div class="lightbox" aria-hidden="true">
+    <button class="close" aria-label="Close image">×</button>
+    <img src="" alt="Expanded project screenshot" />
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
